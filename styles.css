@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	position: relative;
+}
+
+.white-rectangle {
+	background-color: white;
+	width: 800px;
+	height: 150px;
+	position: relative;
+}
+
+.coffee-image {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(1%);
+  transform: translateX(25%);
+	height: 370px;
+	width: auto;
+}
+
+.yellow-rectangle {
+	background-color: gold;
+	width: 800px;
+	height: 400px;
+	margin-top: -50px;
+}
+
+ p {
+  margin: 0;
+	color: black;
+	text-align: center;
+  font-family: "Montserrat", sans-serif;
+  transform: translateX(20%);
+  font-size: small;
+}
+
+h1 {
+  margin: 0;
+	color: black;
+	text-align: center;
+  font-family: "Montserrat", sans-serif;
+  transform: translateX(20%);
+}
+
+button {
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 150px;
+  font-family: "Montserrat", sans-serif;
+  transform: translateX(320%);
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: gold;
+  }
+
+  .white-rectangle, .yellow-rectangle {
+    width: 100%;
+    background-color: gold;
+  }
+
+  .coffee-image {
+    height: 250px;
+    width: 150px;
+  }
+
+  p, h1 {
+    transform: translateX(50%);
+    transform: translateY(50%);
+  }
+
+  button {
+    transform: translateY(50%);
+  }
+}
